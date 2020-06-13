@@ -1,0 +1,193 @@
+.body-grid-container {  
+    display: grid;  
+    height: 100vh;
+    width: 80vw;
+    margin: 2% auto;
+    border: solid black 1pt;
+    /* grid-template-columns: 35% 30% 35%; */
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-rows: 20% 25% 25% 5% 25%;
+    grid-template-areas: 
+    "header header header header header header"
+    "profile profile headshot headshot contact contact"
+    "edu edu skills skills expertise expertise"
+    "experience experience experience experience experience experience"
+    "pastexp pastexp pastexp currentexp currentexp currentexp";
+}
+
+header {         
+    grid-area: header;
+    background-color: #C5D3EE;
+    height: auto;
+    width: auto;  
+    border-bottom: solid black 1pt;
+
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
+h1 {
+    font-family: 'Roboto', sans-serif;
+    font-style: italic;
+    font-weight: bolder;
+}
+
+h2 {
+    font-size: 13px;
+    font-family: 'Roboto', sans-serif;
+    
+}
+
+h3 {
+    font-size: 18px;
+    text-align: center;
+
+}
+
+.applicant {
+    grid-area: applicant;
+    background-color: white;
+    justify-content: center;
+    border: solid black 1pt;
+    margin-left: 150px;
+    margin-right: 150px;
+    align-content: center;
+    text-align: center;
+    margin-top: 35px;
+
+}
+
+.profile {
+    grid-area: profile;
+    /* border-right: solid black 1pt; */
+    padding-left: 3px;    
+    
+}
+
+#profile-line {
+    height: 15px; 
+    background-color: #C6D3EE;
+    border: none;
+    width: 150px
+
+}
+
+#contact-line {
+    height: 15px; 
+    background-color: #C6D3EE;
+    border: none;
+    width: 150px
+}
+
+#skills-line {
+    height: 15px; 
+    background-color: #C6D3EE;
+    border: none;
+    width: 150px
+}
+
+.headshot {
+    grid-area: headshot;
+    /* border: solid black 1pt; */
+    /* background-color: black; */
+}
+
+
+#headshot {
+    grid-area: hs;
+    image-resolution: auto;
+    height: 190px;
+    margin-left: 30px;
+    margin-top: 5px;
+    border-radius: 50%;
+    /* padding-left: 3px; */
+    
+    
+}
+
+.contact-me {
+    grid-area: contact;
+    /* border-left: solid black 1pt; */
+    padding-left: 3px;
+    font-style: italic;
+    font-weight: bold;
+    font-size: larger;
+
+}
+
+.edu {
+    grid-area: edu;
+    border-top: solid black 1pt;
+    padding-left: 3px;
+    font-size: larger;
+    /* border-bottom: solid black 1pt; */
+
+}
+
+.skills {
+    grid-area: skills;
+    border-right: solid black 1pt;
+    border-left: solid black 1pt;
+    border-top: solid black 1pt;
+    padding-left: 3px;
+    text-align: center;
+    font-weight: bolder;
+    font-size: large;
+
+}
+
+.expertise {
+    grid-area: expertise;
+    border-top: solid black 1pt;
+    padding-left: 3px;
+    /* font-style: italic; */
+    
+    /* border-bottom: solid black 1pt; */
+
+}
+.expertise > p {
+    font-style: italic;
+    font-size: larger;
+}
+
+.experience {
+    grid-area: experience;
+    justify-content: center;
+    align-content: center;
+    border-top: solid black 1pt;
+    
+
+}
+
+.experience > h3 {
+    font-size: 22px;
+    border-bottom: solid black 1pt;
+    background-color: #C6D3EE;
+    margin: 0;
+}
+
+.current-exp {
+    grid-area: currentexp;
+    /* border-left: solid black 1pt; */
+    margin-right: 2px
+
+}
+
+.past-exp {
+    grid-area: pastexp;
+    /* border-right: solid black 1pt; */
+    margin-left: 2px
+
+}
+
+.past-exp > p {
+    text-align: center;
+    font-weight: bold;
+}
+
+.current-exp > p {
+    text-align: center;
+    font-weight: bold;
+}

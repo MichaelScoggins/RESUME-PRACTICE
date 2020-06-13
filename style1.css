@@ -1,0 +1,34 @@
+
+
+
+
+
+.bodygrid-container {
+    grid-template-rows: 3fr 3fr 3fr 1fr 3fr;
+    height: 100vh;
+    width: 100vw;
+    border: 10px solid black;
+}
+
+.header-container {
+    grid-row: 1/2;
+    grid-template-columns: 1fr 2fr 1fr;
+    grid-template-rows: 1fr 2fr 1fr;
+    background-color: #C5D3EE;
+}
+
+.section-header {
+    grid-template-columns: 1fr 2fr 1fr;
+    grid-template-rows: 1fr 2fr 1fr;
+    text-align: center;
+    grid-row: 2/3;
+    grid-column: 2/3;
+}
+
+.job-title {
+    grid-template-rows: 1fr 2fr 1fr;
+    grid-template-columns: 1fr 2fr 1fr;
+    text-align: center;
+    grid-row: 2/3;
+    grid-column: 2/4;
+}
